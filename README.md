@@ -42,7 +42,7 @@ The repository contains some simplified examples of Limio Subscription Commerce 
 
 Some details of the implementation:
 
-`@limio/sdk`: This is a simplified version of the Limio SDK, to find details of what functions are available and what they return please read our external documentation: https://developers.limio.com/limio-sdk/getting-started
+`@limio/sdk`: This is a simplified version of the Limio SDK. To find details of what functions are available and what they return please read our external documentation: https://developers.limio.com/limio-sdk/getting-started.
 
 `@limio/design-system`: This is using Reactstrap - a React implementation of Bootstrap. For all available components and how to use them please read the documentation here: https://reactstrap.github.io/?path=/story/home-installation--page
 
