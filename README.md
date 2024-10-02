@@ -46,6 +46,8 @@ Some details of the implementation:
 
 `@limio/design-system`: This is using Reactstrap - a React implementation of Bootstrap. For all available components and how to use them please read the documentation here: https://reactstrap.github.io/?path=/story/home-installation--page
 
+NOTE: The implementations provided in this code test may not be complete and may require exploration and extension to fully solve the challenges presented. Part of the test is to investigate and potentially expand upon these implementations as needed.
+
 ### Questions
 
 Please answer the following questions:
@@ -83,18 +85,3 @@ To run the app simply,
  * Clean, concise code. Comments are appreciated.
  * Knowledge of up to date React features e.g. Hooks.
  * Note: this example uses Flow for typing, not Typescript.
-
-
-
-
-    
-      
-    
-    
-
- 
-
-
-
-
-
