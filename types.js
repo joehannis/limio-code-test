@@ -1,5 +1,4 @@
 // @flow
-// note that these are imported via .flowconfig to avoid having a dependency on @i42/shared
 import type { Offer as OfferType, Order, OrderItem, Product, Subscription, CatalogItem } from "@limio/types"
 
 type Offer = CatalogItem<OfferType>

@@ -1,3 +1,5 @@
+// @flow
+
 type ContactField = {
   label: string,
   url: string,

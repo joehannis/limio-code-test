@@ -14,7 +14,7 @@
     "@pmmmwh/react-refresh-webpack-plugin": "^0.5.4",
     "@sentry/browser": "^7.15.0",
     "@svgr/webpack": "^5.5.0",
-    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/jest-dom": "^6.5.0",
     "@testing-library/react": "^12.1.4",
     "@testing-library/user-event": "^14.4.3",
     "@welldone-software/why-did-you-render": "^6.2.1",
@@ -135,7 +135,9 @@
     "setupFiles": [
       "react-app-polyfill/jsdom"
     ],
-    "setupFilesAfterEnv": [],
+    "setupFilesAfterEnv": [
+      "<rootDir>/src/setupTests.js"
+    ],
     "testMatch": [
       "<rootDir>/src/**/__tests__/**/*.{js,jsx,ts,tsx}",
       "<rootDir>/src/**/*.{spec,test}.{js,jsx,ts,tsx}"
@@ -153,7 +155,15 @@
     "modulePaths": [],
     "moduleNameMapper": {
       "^react-native$": "react-native-web",
-      "^.+\\.module\\.(css|sass|scss)$": "identity-obj-proxy"
+      "^.+\\.module\\.(css|sass|scss|less)$": "identity-obj-proxy",
+      "^.+\\.css$": "<rootDir>/config/jest/cssTransform.js",
+      "^@limio/design-system$": "<rootDir>/packages/design-system",
+      "^@limio/sdk$": "<rootDir>/packages/limio/sdk",
+      "^@limio/sdk/(.*)$": "<rootDir>/packages/limio/sdk/$1",
+      "^@limio/utils$": "<rootDir>/packages/limio/utils",
+      "^@limio/utils/(.*)$": "<rootDir>/packages/limio/utils/$1",
+      "^@limio/ui$": "<rootDir>/packages/limio/ui",
+      "^@limio/ui/(.*)$": "<rootDir>/packages/limio/ui/$1"
     },
     "moduleFileExtensions": [
       "web.js",

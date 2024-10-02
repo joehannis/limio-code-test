@@ -1,0 +1,5 @@
+[options]
+module.name_mapper='^@limio/sdk$' -> '<PROJECT_ROOT>/packages/limio/sdk'
+module.name_mapper='^@limio/sdk/\(.*\)$' -> '<PROJECT_ROOT>/packages/limio/sdk/\1'
+module.name_mapper='^@limio/utils$' -> '<PROJECT_ROOT>/packages/limio/utils'
+module.name_mapper='^@limio/utils/\(.*\)$' -> '<PROJECT_ROOT>/packages/limio/utils/\1'
