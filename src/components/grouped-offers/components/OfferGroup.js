@@ -92,7 +92,6 @@ function OfferGroup({
   selectedGroup,
   setSelectedGroup
 }: Props): React.Node {
-
   const { useBasket } = useLimio()
   const { addToBasket } = useBasket()
 
@@ -140,7 +139,7 @@ function OfferGroup({
             <Button
               id={`offer-group-button-${groupId}`}
               disabled={!groupSelected}
-              onClick={() => addToBasket(selection, undefined, undefined, redirect_url + window.location.search)}
+              onClick={() => addToBasket(selection, redirect_url + window.location.search)}
             >
               {ctaText || "Buy now"}
             </Button>
