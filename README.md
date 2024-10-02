@@ -8,6 +8,7 @@ Welcome to the Limio coding interview.
 
 The Limio tech stack is always evolving as we continue to seek out the best tools for the job. Our main tech stack is:
 
+  * JavaScript with Flow
   * React, React Hooks with Redux (front-end of our main app & Limio Shop)
   * Gatsby (Limio Shop)
   * AWS Lambda with Serverless for our backend API
@@ -41,9 +42,11 @@ The repository contains some simplified examples of Limio Subscription Commerce 
 
 Some details of the implementation:
 
-`@limio/sdk`: This is a simplified version of the Limio SDK, to find details of what functions are available and what they return please read our external documentation: https://developers.limio.com/limio-sdk/getting-started
+`@limio/sdk`: This is a simplified version of the Limio SDK. To find details of what functions are available and what they return please read our external documentation: https://developers.limio.com/limio-sdk/getting-started.
 
 `@limio/design-system`: This is using Reactstrap - a React implementation of Bootstrap. For all available components and how to use them please read the documentation here: https://reactstrap.github.io/?path=/story/home-installation--page
+
+NOTE: The implementations provided in this code test may not be complete and may require exploration and extension to fully solve the challenges presented. Part of the test is to investigate and potentially expand upon these implementations as needed.
 
 ### Questions
 
@@ -78,20 +81,7 @@ To run the app simply,
     * If you don't answer all questions, that is fine. We prefer depth on a few questions rather than superficial answers.
  * Some testing, but not extensive. Have at least one test case, so that we know you can do it. 
     * You'll notice the example code doesn't have much testing. It should.
+    * You should be able to write `yarn test` to run your test suite.
  * Clean, concise code. Comments are appreciated.
  * Knowledge of up to date React features e.g. Hooks.
-
-
-
-
-    
-      
-    
-    
-
- 
-
-
-
-
-
+ * Note: this example uses Flow for typing, not Typescript.
