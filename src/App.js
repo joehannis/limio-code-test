@@ -12,7 +12,6 @@ import "./App.css"
 function App() {
   const endpoint =  "https://localhost:9002"
   const [key] = useState(0)
-  const [basket, setBasket] = useState({ items: [] })
 
   return (
     <div>
@@ -20,7 +19,7 @@ function App() {
       <div>
         <ErrorBoundary>
           <LimioProvider key={key}>
-            <LimioHeader  basket={basket}  />
+            <LimioHeader />
             <GroupedOffers/>
             <LimioFooter />
           </LimioProvider>

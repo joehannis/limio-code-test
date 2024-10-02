@@ -8,6 +8,7 @@ Welcome to the Limio coding interview.
 
 The Limio tech stack is always evolving as we continue to seek out the best tools for the job. Our main tech stack is:
 
+  * JavaScript with Flow
   * React, React Hooks with Redux (front-end of our main app & Limio Shop)
   * Gatsby (Limio Shop)
   * AWS Lambda with Serverless for our backend API
@@ -78,8 +79,10 @@ To run the app simply,
     * If you don't answer all questions, that is fine. We prefer depth on a few questions rather than superficial answers.
  * Some testing, but not extensive. Have at least one test case, so that we know you can do it. 
     * You'll notice the example code doesn't have much testing. It should.
+    * You should be able to write `yarn test` to run your test suite.
  * Clean, concise code. Comments are appreciated.
  * Knowledge of up to date React features e.g. Hooks.
+ * Note: this example uses Flow for typing, not Typescript.
 
 
 

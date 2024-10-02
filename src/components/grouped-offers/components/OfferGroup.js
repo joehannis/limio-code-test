@@ -6,6 +6,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faChevronDown } from "@fortawesome/free-solid-svg-icons"
 import { Button, CustomInput } from "@limio/design-system"
 import { sanitizeString } from "@limio/utils/offers"
+import { useLimio } from "@limio/sdk"
 
 type MobileDescriptionProps = {
   heading: string,
@@ -91,8 +92,9 @@ function OfferGroup({
   selectedGroup,
   setSelectedGroup
 }: Props): React.Node {
-  const { shop } = { shop: { addToBasket: () => console.log("Add to basket!") } }
-  const { addToBasket } = shop
+
+  const { useBasket } = useLimio()
+  const { addToBasket } = useBasket()
 
   const [firstOffer = {}] = offers
   const description = R.path(["data", "attributes", "offer_features__limio"], firstOffer) || "" // Get this from the first offer in the group (admittedly, not the best)
