@@ -9,7 +9,7 @@ export const LimioHeader = ({ basket }) => {
     <nav className={"navbar navbar-expand-lg navbar-light shadow"}>
       <input type="checkbox" id="navbar-toggle-cbox" />
       <a className="navbar-brand" href={"/"}>
-        <img src={"https://s3-eu-west-1.amazonaws.com/limio-public/limiologo.png"} alt="Header logo" />
+        <img src={"https://custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit,fl_lossy,h_300,w_300,f_auto,q_auto/1156184/637770_576700.png"} alt="Header logo" />
       </a>
       <BasketButton mobile={true} />
       <label

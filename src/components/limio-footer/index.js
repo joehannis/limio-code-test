@@ -45,7 +45,7 @@ const LimioFooter = () => {
     <div className="FooterOuter">
       <div className="FooterWrapper">
         <div className="FooterContent">
-          <Logo logo={"https://s3-eu-west-1.amazonaws.com/limio-public/limiologo.png"} />
+          <Logo logo={"https://custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit,fl_lossy,h_300,w_300,f_auto,q_auto/1156184/637770_576700.png"} />
           <div className="FooterSections">
             <div className="FooterLeft">
               <ContactFields contactFields={contactFields} />
